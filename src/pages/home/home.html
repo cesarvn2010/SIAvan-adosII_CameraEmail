@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Foto
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+   <ion-item>
+     
+     <button ion-button icon-left type="button"
+     (click)="tirarFoto(1)">
+     Foto Byte&nbsp;&nbsp;
+     <ion-icon name="camera"></ion-icon>
+    </button>
+    
+    <button ion-button icon-left type="button"
+     (click)="tirarFoto(2)">
+     Foto Arquivo&nbsp;&nbsp;
+     <ion-icon name="camera"></ion-icon>
+    </button>   
+
+   </ion-item>
+
+   <button ion-button icon-left type="button"
+     (click)="enviarEmail()">
+     Email&nbsp;&nbsp;
+     <ion-icon name="mail"></ion-icon>
+    </button>
+
+   <ion-item>
+    <img [src]="foto" *ngIf="foto"/>
+   </ion-item>
+</ion-content>
